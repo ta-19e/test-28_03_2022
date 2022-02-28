@@ -19,4 +19,4 @@
 - add [jest](https://jestjs.io/) to project and write at-least one test for [`say_hello.js`](./say_hello.js).
  and JEST
 - add GitHub actions to run test ([jest](https://jestjs.io/))
-- add CODEOWNERS file to set @eritikass as codeowner for all the code
+- add CODEOWNERS file to set [`@eritikass`](https://github.com/eritikass) as codeowner for all the code
