@@ -31,5 +31,5 @@ jobs:
 
       - name: run jest
         uses: stefanoeb/jest-action@1.0.3
-          with:
-          jestArgs: ./say_hello.test.js
+        with:
+          jestArgs: /say_hello.test.js
