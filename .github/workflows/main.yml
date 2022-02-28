@@ -30,4 +30,6 @@ jobs:
         run: npm run lint
 
       - name: run jest
-        run: npm run jest
+        uses: stefanoeb/jest-action@1.0.3
+          with:
+          jestArgs: ./say_hello.test.js
