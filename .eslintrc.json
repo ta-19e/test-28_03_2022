@@ -11,6 +11,10 @@
         "sourceType": "module"
     },
     "rules": {
-        "quotes": [2, "single", { "avoidEscape": true }]
+        "no-console": "off"  ,
+        "quotes": [2, "single", { "avoidEscape": true }],
+        "camelcase": "off",
+        "import/extensions": "off"
+           
     }
 }
