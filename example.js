@@ -4,7 +4,7 @@ const assert = require('assert');
 const sayHello = require('./say_hello');
 
 // test how function works
-console.log(say_hello('jaan'));
+console.log(sayHello('jaan'));
 // use also colors to be more "fancy"
 console.log(chalk.yellow('mari: '), chalk.bold.green(sayHello('mari')));
 console.log(chalk.yellow('kaja kallas: '), chalk.bold.green(sayHello('kaja kallas')));
