@@ -1,5 +1,5 @@
-const say_hello = require("./say_hello");
+const sayHello = require('./say_hello');
 
-test("test say_hello with name Asko", () => {
-  expect(say_hello("Asko")).toBe("Hello Asko!");
+test('test say_hello with name Asko', () => {
+  expect(sayHello('Asko')).toBe('Hello Asko!');
 });
