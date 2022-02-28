@@ -30,4 +30,4 @@ jobs:
         run: npm run lint
 
       - name: run jest
-        run: npm jest
+        run: npm run jest
