@@ -5,9 +5,9 @@ name: Run Eslint
 
 on:
   push:
-    branches: [ jan ]
+    branches: jan 
   pull_request:
-    branches: [ jan ]
+    branches: jan
 
 permissions:
   checks: write
