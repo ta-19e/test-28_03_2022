@@ -9,21 +9,31 @@ on:
   pull_request:
     branches: [ jan ]
 
-jobs:
-  build:
+permissions:
+  checks: write
+  contents: write
 
+jobs:
+  run-linters:
+    name: Run linters
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [14]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run lint
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      # Install your linters here
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Run linters
+        uses: wearerequired/lint-action@v1
+        with:
+          # Enable your linters here
+          eslint: true
+          auto_fix: true
