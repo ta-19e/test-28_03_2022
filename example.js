@@ -1,7 +1,7 @@
 const chalk = require('chalk');
 const assert = require('assert');
 
-const sayHello = require('./say_hello.js');
+const sayHello = require('./say_hello');
 
 // test how function works
 console.log(say_hello('jaan'));
