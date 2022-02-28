@@ -5,9 +5,9 @@ name: Run Eslint
 
 on:
   push:
-    branches: [ master ]
+    branches: [ jan ]
   pull_request:
-    branches: [ master ]
+    branches: [ jan ]
 
 jobs:
   build:
