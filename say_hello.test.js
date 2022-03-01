@@ -1,7 +1,5 @@
 const sayHello = require('./say_hello');
 
-const names = ['Jan Kängsepp', 'Artur Liimann', 'Harri Allmann'];
-
 describe('Say hello', () => {
   test.each([
     ['jan kängsepp', 'Hello Jan Kängsepp!'],
