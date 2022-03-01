@@ -9,6 +9,10 @@
     "sourceType": "module"
   },
   "rules": {
-    "quotes": ["warn", "single"]
+          "no-console": "off"  ,
+        "quotes": [2, "single", { "avoidEscape": true }],
+        "camelcase": "off",
+        "import/extensions": "off"
+           
   }
 }
