@@ -1,6 +1,6 @@
 const chalk = require('chalk');
 const assert = require('assert');
-
+// eslint-disable-next-line camelcase
 const say_hello = require('./say_hello.js');
 
 // test how function works
